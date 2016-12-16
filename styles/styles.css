@@ -1,5 +1,85 @@
+.body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .header-photo {
-  background-image: url("./images/house+w+panels.jpg");
-  /*background-repeat: no-repeat;*/
-  /*height: 500px;*/
+  background-image: url("./../images/house+w+panels.jpg");
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: 100%;
+
+}
+
+p {
+  margin: 15px;
+}
+
+.header-tabs {
+  display: flex;
+  justify-content: space-around;
+  float: right;
+  margin-right: 20px;
+  margin-top: 50px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  /*font-weight: light;*/
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin-top: 100px;
+  height: 300px;
+}
+
+.energy-consult-info {
+  text-align: center;
+}
+
+.we-do {
+  text-align: center;
+}
+
+.we-do-img {
+  margin-top: 20px;
+}
+
+.quote-form {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.get-my-quote {
+  margin: 30px;
+}
+
+.footer {
+  background: #454545;
+  height: 300px;
+}
+
+.contact-info {
+  color: white;
+  text-align: center;
+  /*margin: 100px;*/
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  margin: 10px;
+  color: white;
 }
