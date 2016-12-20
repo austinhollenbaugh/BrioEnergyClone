@@ -20,7 +20,16 @@
                 <img class="logo" src="./images/brio-logo.png" alt="" />
                 <div class="header-tabs">
                     <p class="tab">HOME</p>
-                    <p class="tab">ABOUT SOLAR</p>
+                    <div class="dropdown">
+                        <p class="tab">ABOUT SOLAR</p>
+                        <div class="dropdown-tabs">
+                            <p>What we do</p>
+                            <p>How we do it</p>
+                            <p>Take action</p>
+                            <p>Solar FAQ</p>
+                            <p>Recent Installs</p>
+                        </div>
+                    </div>
                     <p class="lower-power-button">LOWER YOUR POWER BILL</p>
                 </div>
             </div>
@@ -38,7 +47,7 @@
             <img class="box" src="./images/lower-power.png" alt="">
         </div>
         <div class="energy-consult-info">
-            <a class="energy-consult-button" href="">SCHEDULE FREE ENERGY CONSULTATION</a>
+            <p class="energy-consult-para"><a class="energy-consult-button" href="">SCHEDULE FREE ENERGY CONSULTATION</a></p>
             <p class="purpose">The purpose of this meeting is to educate you on solar energy, show you how much money you would save with solar, see proposed panel designs for your home, and answer any questions.</p>
         </div>
         <div class="we-do">
@@ -53,21 +62,33 @@
         <p class="form-description">Brio Energy provides solar energy without any upfront costs while also lowering power bills.</p>
         <div class="form-main">
             <div class="name">
-                <!-- Name*<br> -->
-                <div class="first-name">
-                <input class="name-input" type="text">
-                <br>First Name</div><div class="last-name">
-                <input class="name-input" type="text">
-                <br>Last Name
+                <div class="name-title">Name *</div>
+                <div class="name-inputs-container">
+                    <div><input class="name-input" type="text">
+                        <p class="tiny">First Name</p>
+                    </div>
+                    <div><input class="name-input" type="text">
+                        <p class="tiny">Last Name</p>
+                    </div>
                 </div>
             </div>
             <div class="email">
-                Email Address*<br>
+                Email Address *<br>
                 <input class="email-input" type="text">
             </div>
             <div class="phone">
-                Phone:<br>
-                 <input class="phone-input" type="text"> <input class="phone-input" type="text"> <input class="phone-input" type="text">
+                <p>Phone</p>
+                <div class="phone-inputs-container">
+                    <div class="first-three"><input class="phone-input" type="text">
+                        <p class="tiny">(###)</p>
+                    </div>
+                    <div class="second-three"><input class="phone-input" type="text">
+                        <p class="tiny">###</p>
+                    </div>
+                    <div class="four"><input class="phone-input long-phone" type="text">
+                        <p class="tiny">####</p>
+                    </div>
+                </div>
             </div>
         </div>
 
