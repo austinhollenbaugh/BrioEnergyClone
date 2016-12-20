@@ -1,17 +1,40 @@
-.body {
-  font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .header-photo {
   background-image: url("./../images/house+w+panels.jpg");
   background-repeat: no-repeat;
-  height: 700px;
+  background-position: 0px -335px;
+  height: 625px;
   background-size: 100%;
-
 }
 
-p {
-  margin: 15px;
+.layer {
+  background-color: rgba(128,128,128,.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-menu {
+  display: inline-block;
+  width: 100%;
+}
+
+.other-tabs {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  padding: 12px;
 }
 
 .header-tabs {
@@ -21,29 +44,102 @@ p {
   margin-right: 20px;
   margin-top: 50px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  /*font-weight: light;*/
+  font-family: 'montserratlight', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+
+.lower-power-button {
+  border: 2px solid white;
+  padding: 1em 1.5em;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-left: 10px;
+  
+}
+
+.lower-power-button:hover {
+  background: white;
+  color: black;
 }
 
 .logo {
   float: left;
-  height: 100px;
+  height: 90px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
+.header-main {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  /*font-weight: bold;*/
+}
+
+.smart-easy {
+  margin-top: 190px;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.free-quote-button {
+  letter-spacing: 4px;
+  font-family: 'montserratlight', sans-serif;
+  font-size: 12px;
+  padding: 13px;
+  background: #49BCF6;
+  width: 135px;
+  margin: 50px auto;
+  border-radius: 50px;
+}
+
+.free-quote-button:hover {
+  background-color: #41BBF9;
+}
+
 .first-row {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .box {
-  margin-top: 100px;
+  margin-top: 50px;
   height: 300px;
 }
 
 .energy-consult-info {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.energy-consult-button {
+  margin-top: 50px;
+  border: 2px solid #49BCF6;
+  padding: 20px 30px;
+  border-radius: 3px;
+  color: #49BCF6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.energy-consult-button:hover {
+  background: #49BCF6;
+  color: white;
+}
+
+.purpose {
+  color: #767676;
+  font-size: 12px;
+  font-weight: light;
+  width: 500px;
+  line-height: 2;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
 }
 
 .we-do {
@@ -51,16 +147,103 @@ p {
 }
 
 .we-do-img {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .quote-form {
   text-align: center;
   margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  color: #767676;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.form-main {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  color: #767676;
+}
+
+input[type="text"], textarea {
+  background-color : #FAFAFA;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.name {
+  text-align: left;
+  margin-top: 25px;
+
+}
+
+.name-input {
+  width: 48%;
+  height: 30px;
+
+}
+
+.first-name {
+  font-size: 11px;
+}
+
+.last-name {
+  font-size: 11px;
+}
+
+.email {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.email-input {
+  width: 100%;
+  height: 30px;
+  background-color : #FAFAFA;
+}
+
+.phone {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.phone-input {
+  height: 30px;
+  width: 10%;
 }
 
 .get-my-quote {
-  margin: 30px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 120px;
+  background: #49BCF6;
+  width: 200px;
+  letter-spacing: 5px;
+  border-radius: 50px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.quote-text {
+  margin-top: 14px;
+  color: white;
+  text-decoration: none;
+
 }
 
 .footer {
@@ -69,14 +252,19 @@ p {
 }
 
 .contact-info {
-  color: white;
+  color: #efefef;
   text-align: center;
-  /*margin: 100px;*/
+  font-family: 'montserratlight', sans-serif;
+  letter-spacing: 3px;
+  font-size: 12px;
+  padding-top: 70px;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
+  font-size: 18px;
+  margin-top: 30px;
 }
 
 .fa {
